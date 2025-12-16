@@ -39,7 +39,7 @@ function Component() {
 
 function ClipPathGroup() {
   return (
-    <div className="absolute contents inset-[2.41%_46.48%_96.03%_46.51%]" data-name="Clip path group">
+    <div className="absolute inset-[2.41%_46.48%_96.03%_46.51%]" data-name="Clip path group">
       <Component />
     </div>
   );
@@ -47,7 +47,7 @@ function ClipPathGroup() {
 
 function Component1() {
   return (
-    <div className="absolute contents inset-[2.41%_46.48%_96.03%_46.51%]" data-name="그룹 70817">
+    <div className="absolute inset-[2.41%_46.48%_96.03%_46.51%]" data-name="그룹 70817">
       <ClipPathGroup />
     </div>
   );
@@ -62,7 +62,7 @@ function Hold({ onNavigateHome, onNavigateToBodySoap }: { onNavigateHome?: () =>
       height: '2604px'
     }}>
       {/* 로고 영역 */}
-      <div className="absolute contents inset-[2.41%_46.48%_96.03%_46.51%] cursor-pointer pointer-events-auto" onClick={onNavigateHome}>
+      <div className="absolute inset-[2.41%_46.48%_96.03%_46.51%] cursor-pointer pointer-events-auto" onClick={onNavigateHome}>
         <Component1 />
       </div>
       

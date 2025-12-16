@@ -84,10 +84,10 @@ function LogoComponent() {
   );
 }
 
-function LogoClipPathGroup() {
+function ClipPathGroup() {
   return (
     <div
-      className="absolute contents inset-[2.41%_46.48%_96.03%_46.51%]"
+      className="absolute inset-[2.41%_46.48%_96.03%_46.51%]"
       data-name="Clip path group"
     >
       <LogoComponent />
@@ -95,13 +95,13 @@ function LogoClipPathGroup() {
   );
 }
 
-function LogoGroup() {
+function Component1() {
   return (
     <div
-      className="absolute contents inset-[2.41%_46.48%_96.03%_46.51%]"
+      className="absolute inset-[2.41%_46.48%_96.03%_46.51%]"
       data-name="그룹 31"
     >
-      <LogoClipPathGroup />
+      <ClipPathGroup />
     </div>
   );
 }
@@ -123,10 +123,10 @@ function Hold({
     >
       {/* 로고 영역 - 메인과 동일한 위치 */}
       <div
-        className="absolute contents inset-[2.41%_46.48%_96.03%_46.51%] cursor-pointer pointer-events-auto"
+        className="absolute inset-[2.41%_46.48%_96.03%_46.51%] cursor-pointer pointer-events-auto"
         onClick={onNavigateHome}
       >
-        <LogoGroup />
+        <Component1 />
       </div>
 
       {/* SHOP 영역 - 메인과 동일한 위치 */}

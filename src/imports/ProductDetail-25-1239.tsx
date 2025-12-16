@@ -34,7 +34,7 @@ function Component() {
 
 function ClipPathGroup() {
   return (
-    <div className="absolute bottom-[92.68%] contents left-[46.11%] right-[46.11%] top-0" data-name="Clip path group">
+    <div className="absolute bottom-[92.68%] left-[46.11%] right-[46.11%] top-0" data-name="Clip path group">
       <Component />
     </div>
   );
@@ -42,7 +42,7 @@ function ClipPathGroup() {
 
 function Component1() {
   return (
-    <div className="absolute bottom-[92.68%] contents left-[46.11%] right-[46.11%] top-0" data-name="그룹 70817">
+    <div className="absolute bottom-[92.68%] left-[46.11%] right-[46.11%] top-0" data-name="그룹 70817">
       <ClipPathGroup />
     </div>
   );

@@ -33,7 +33,7 @@ function Component2() {
 
 function MaskGroup() {
   return (
-    <div className="absolute bottom-[52.53%] contents left-0 right-0 top-0" data-name="Mask group">
+    <div className="absolute bottom-[52.53%] left-0 right-0 top-0" data-name="Mask group">
     </div>
   );
 }
@@ -41,12 +41,11 @@ function MaskGroup() {
 function ThroughYourScene() {
   return (
     <div
-      className="absolute contents inset-[41.14%_85.99%_56.18%_5.21%]"
-      data-name="Through your 
-scene"
+      className="absolute left-[5.21%] top-[41.14%] flex flex-col"
+      data-name="Through your scene"
     >
-      <p className="absolute inset-[41.14%_85.99%_57.71%_5.21%]">{`THROUGH YOUR `}</p>
-      <p className="absolute inset-[42.67%_91.3%_56.18%_5.21%]">SCENE</p>
+      <p className="text-white" style={{ fontSize: 'clamp(10px, 1.04vw, 20px)' }}>THROUGH YOUR</p>
+      <p className="text-white" style={{ fontSize: 'clamp(10px, 1.04vw, 20px)' }}>SCENE</p>
     </div>
   );
 }
@@ -54,23 +53,22 @@ scene"
 function YourSinsuru() {
   return (
     <div
-      className="absolute contents inset-[41.16%_5.51%_56.16%_89.56%]"
-      data-name="Your
-sinsuru"
+      className="absolute right-[5.51%] top-[41.16%] flex flex-col items-end"
+      data-name="Your sinsuru"
     >
-      <p className="absolute inset-[41.16%_5.51%_57.7%_91.47%]">YOUR</p>
-      <p className="absolute inset-[42.69%_5.85%_56.16%_89.56%] text-right">SINSURU</p>
+      <p className="text-white text-right" style={{ fontSize: 'clamp(10px, 1.04vw, 20px)' }}>YOUR</p>
+      <p className="text-white text-right" style={{ fontSize: 'clamp(10px, 1.04vw, 20px)' }}>SINSURU</p>
     </div>
   );
 }
 
 function Component3() {
   return (
-    <div className="absolute contents font-['PP_Fragment:Serif_Light',sans-serif] inset-[41.14%_5.51%_56.16%_5.21%] leading-[normal] not-italic text-nowrap text-white whitespace-pre" data-name="그룹 70550" style={{ fontSize: 'clamp(10px, 1.04vw, 20px)' }}>
+    <div className="absolute font-['PP_Fragment:Serif_Light',sans-serif] inset-[41.14%_5.51%_56.16%_5.21%]" data-name="그룹 70550">
       <ThroughYourScene />
-      <p className="absolute inset-[42.69%_57.66%_56.16%_30.94%]">NATURAL BODY CARE</p>
+      <p className="absolute left-[30.94%] top-[42.69%] text-white" style={{ fontSize: 'clamp(10px, 1.04vw, 20px)' }}>NATURAL BODY CARE</p>
       <YourSinsuru />
-      <p className="absolute inset-[42.69%_30.89%_56.16%_56.51%]">FIND YOUR OWN SCENE</p>
+      <p className="absolute right-[30.89%] top-[42.69%] text-white" style={{ fontSize: 'clamp(10px, 1.04vw, 20px)' }}>FIND YOUR OWN SCENE</p>
     </div>
   );
 }
@@ -103,7 +101,7 @@ function Component() {
 
 function ClipPathGroup() {
   return (
-    <div className="absolute contents inset-[2.41%_46.48%_96.03%_46.51%]" data-name="Clip path group">
+    <div className="absolute inset-[2.41%_46.48%_96.03%_46.51%]" data-name="Clip path group">
       <Component />
     </div>
   );
@@ -111,7 +109,7 @@ function ClipPathGroup() {
 
 function Component1() {
   return (
-    <div className="absolute contents inset-[2.41%_46.48%_96.03%_46.51%]" data-name="그룹 31">
+    <div className="absolute inset-[2.41%_46.48%_96.03%_46.51%]" data-name="그룹 31">
       <ClipPathGroup />
     </div>
   );
