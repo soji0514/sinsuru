@@ -6,13 +6,14 @@ import path from 'path'
 function figmaAssetPlugin() {
   return {
     name: 'figma-asset-plugin',
+    enforce: 'pre' as const,
     resolveId(id: string) {
       if (id.startsWith('figma:asset/')) {
-        return id
+        return '\0' + id // Use null byte prefix for virtual modules
       }
     },
     load(id: string) {
-      if (id.startsWith('figma:asset/')) {
+      if (id.startsWith('\0figma:asset/')) {
         // Return empty string for build - images will come from Supabase Storage
         return 'export default ""'
       }
@@ -21,7 +22,7 @@ function figmaAssetPlugin() {
 }
 
 export default defineConfig({
-  plugins: [react(), figmaAssetPlugin()],
+  plugins: [figmaAssetPlugin(), react()],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './'),
